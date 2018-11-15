@@ -213,8 +213,9 @@ var stages = [
 
 var stage = d3.select("body")
 	.append("div")
-	.attr("class","stage")
-	.text(stages[0].desc);
+	.attr("class","stage");
+	
+showStage(stages[0]);
 	
 var currentStage="background";
 var toolbar = d3.select("body")
@@ -248,7 +249,7 @@ function showStage(d){
 	}
 	currentStage=d.stage;
 	d.fn && d.fn();
-	stage.text(d.desc);
+	stage.text(d.name+"："+d.desc);
 	force.restart();
 }
 

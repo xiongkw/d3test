@@ -79,7 +79,7 @@ text {
 }
 
 .action{
-	font: 16px sans-serif;
+	font: 14px sans-serif;
 	stroke: none;
 	pointer-events: none;
 	text-shadow: 0 1px 0 #fff, 1px 0 0 #fff, 0 -1px 0 #fff, -1px 0 0 #fff;
@@ -94,15 +94,18 @@ text {
 .desc{
 	font: 12px sans-serif;
 	stroke: none;
+	fill: red;
 	pointer-events: none;
 	text-shadow: 0 1px 0 #fff, 1px 0 0 #fff, 0 -1px 0 #fff, -1px 0 0 #fff;
 }
 
 .stage{
 	font: 18px sans-serif;
+	color: red;
 	margin: 20px;
 }
 
 .toolbar{
 	margin-left: 20px;
+	margin-bottom: 50px;
 }
