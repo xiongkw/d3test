@@ -19,26 +19,26 @@ svg.append("defs").selectAll("marker")
 	.attr("d", "M0,-5 L10,0 L0,5");
 	
 var nodes = [
-	{name:"司马防",role:"background",desc:"生了八个儿子，各各有才华，世称司马八达...",fx:500,fy:35},//0
-		{name:"司马懿",role:"background",desc:"活得长才是王道，惹不起你们，我也要耗死你们...",fx:350,fy:120},//1
+	{name:"司马防",role:"background",desc:"生了八个儿子，各各有才华...",fx:500,fy:35},//0
+		{name:"司马懿",role:"background",desc:"惹不起你们，也要耗死你们...",fx:350,fy:120},//1
 			{name:"司马昭",role:"background",desc:"路人皆知我心也...",fx:480,fy:240},//2
-				{name:"司马炎",role:"background",desc:"晋武帝：后宫佳丽近万，羊车望幸说的就是朕...",fx:450,fy:360},//3
-					{name:"司马衷",desc:"惠帝：百姓真傻，没有饭吃，咋不吃肉粥呢...",role:"king",fx:370,fy:650},//4
+				{name:"司马炎",role:"background",desc:"后宫佳丽上万，今晚睡哪个羊说了算...",fx:450,fy:360},//3
+					{name:"司马衷",desc:"没饭吃，咋不吃肉呢？百姓真蠢...",role:"king",fx:370,fy:650},//4
 						{name:"司马遹",desc:"太子：贼妇害我...",fx:370,fy:800},//5
 						{name:"贾南风",desc:"皇后：我很丑，但是我心地狠毒...",fx:220,fy:650},//6
 					{name:"司马玮",desc:"楚王：杀贼之功竟被司马亮所窃...",role:"wang",fx:50,fy:650},//7
-					{name:"司马乂",desc:"长沙王：大意了，被小人所害...",role:"wang",fx:750,fy:650},//8
-					{name:"司马颖",desc:"成都王：本想来一招挟惠帝以令诸王，却被司马顒这小子捡了便宜...",role:"wang",fx:900,fy:650},//9
+					{name:"司马乂",desc:"长沙王：大意了，被阴险小人所害...",role:"wang",fx:750,fy:650},//8
+					{name:"司马颖",desc:"成都王：本想挟惠帝以令诸王，却被司马顒捡了便宜...",role:"wang",fx:900,fy:650},//9
 					{name:"司马炽",desc:"躺着得来一个皇位...",fx:520,fy:650},//10
-				{name:"杨  芷",desc:"我饿饿饿...我冷冷冷...",fx:320,fy:360},//11
-				{name:"杨  骏",desc:"我是武帝老丈人，我改你诏书，夺你大权...",fx:320,fy:240},//12
-				{name:"司马攸",desc:"陛下夸我“明德清畅，忠允笃诚”...",role:"background",fx:600,fy:360},//13
-					{name:"司马冏",desc:"齐王：杀了司马伦这伪帝，迎惠帝复位...",role:"wang",fx:600,fy:650},//14
-			{name:"司马亮",desc:"汝南王：武帝欲托孤于我，却被奸人所阻...",role:"wang",fx:160,fy:240},//15
+				{name:"杨  芷",desc:"我饿...我冷...",fx:320,fy:360},//11
+				{name:"杨  骏",desc:"改你诏书，夺你大权...",fx:320,fy:240},//12
+				{name:"司马攸",desc:"明德清畅，忠允笃诚...",role:"background",fx:600,fy:360},//13
+					{name:"司马冏",desc:"齐王：杀了伪帝司马伦，迎惠帝复位...",role:"wang",fx:600,fy:650},//14
+			{name:"司马亮",desc:"汝南王：武帝欲托孤于我，却被奸人杨骏所阻...",role:"wang",fx:160,fy:240},//15
 			{name:"司马伦",desc:"赵王伦：今日吾也来当一回皇上...",role:"wang",fx:50,fy:240},//16
 		{name:"司马孚",desc:"仲达是我二哥也...",role:"background",fx:560,fy:120},//17
 			{name:"司马瑰",desc:"做人要低调...",role:"background",fx:650,fy:240},//18
-				{name:"司马颙",desc:"河间王：司马越这小子敢阴我...",role:"wang",fx:750,fy:360},//19
+				{name:"司马颙",desc:"河间王：司马越这小子竟敢阴我...",role:"wang",fx:750,fy:360},//19
 		{name:"司马馗",desc:"仲达是我二哥也...",role:"background",fx:750,fy:120},//20
 			{name:"司马泰",desc:"做人要低调...",role:"background",fx:830,fy:240},//21
 				{name:"司马越",desc:"东海王：哈哈哈哈，看谁笑到最后...",role:"wang",fx:900,fy:360}//22
