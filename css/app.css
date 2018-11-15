@@ -1,0 +1,108 @@
+body {
+	margin: 0;
+	padding: 0;
+}
+circle{
+	stroke-width: 1.5px;
+}
+.role {
+	fill: #FFF;
+	stroke: #808080;
+}
+.role:hover{
+	stroke: #87CEFA;
+}
+
+.role.background{
+	fill: #FFF;
+}
+
+.king {
+	fill: #FFFF00;
+	stroke: #FFD700;
+}
+
+.wang {
+	fill: #FAFAD2;
+	stroke: #005178;
+}
+
+.power{
+	stroke: #FF00FF;
+}
+
+.dead{
+	fill: #DCDCDC;
+}
+
+.link {
+	stroke-width: 1.5px;
+}
+
+.link:hover{
+	stroke: #6495ED;
+}
+
+.rel{
+	stroke: green;
+	fill: green;
+	stroke-opacity: 0.8;
+}
+
+#marker-rel,#maker-kill,#maker-power{
+	stroke-dasharray: none;
+}
+
+.kill{
+	stroke: red;
+	fill: red;
+}
+
+.takepower{
+	stroke: #FF00FF;
+	fill: #FF00FF;
+}
+
+.transmit {
+	stroke: #FFD700;
+	fill: #FFD700;
+}
+
+.union{
+	stroke: #00FFFF;
+	fill: #00FFFF;
+	stroke-dasharray: 10,10;
+}
+
+text {
+	pointer-events: none;
+}
+
+.action{
+	font: 16px sans-serif;
+	stroke: none;
+	pointer-events: none;
+	text-shadow: 0 1px 0 #fff, 1px 0 0 #fff, 0 -1px 0 #fff, -1px 0 0 #fff;
+}
+
+.button{
+	stroke: #000;
+	fill: none;
+	stroke-width: 1px;
+}
+
+.desc{
+	font: 12px sans-serif;
+	stroke: none;
+	pointer-events: none;
+	text-shadow: 0 1px 0 #fff, 1px 0 0 #fff, 0 -1px 0 #fff, -1px 0 0 #fff;
+}
+
+.stage{
+	font: 18px sans-serif;
+	margin: 20px;
+}
+
+.toolbar{
+	margin-left: 20px;
+}
