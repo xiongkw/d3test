@@ -166,49 +166,49 @@ var stages = [
 		nodes[19].role="wang";
 		nodes[22].role="wang";
 		nodes[10].role="wang";
-	},desc: "290年，晋武帝司马炎驾崩，太子司马衷即位，是为晋惠帝，惠帝痴呆无能，由杨骏辅政"},
+	},desc: "290年，晋武帝司马炎驾崩，太子司马衷即位，即晋惠帝，太傅杨骏辅政"},
 	{name:"第一轮", stage: "first", fn: function(){
 		nodes[11].role="dead";
 		nodes[12].role="dead";
 		nodes[15].role="power";
-	}, desc: "191年，贾南风拉拢汝南王司马亮和楚王司马玮杀了杨骏，太后杨芷被囚禁于金墉城内活活饿死，朝政大权落入司马亮和元老大臣卫瓘之手"},
+	}, desc: "191年，贾南风联合司马亮和司马玮杀了杨骏，太后杨芷被囚禁于金墉城内活活饿死，司马亮和元老大臣卫瓘掌权"},
 	{name:"第二轮", stage: "second", fn: function(){
 		nodes[15].role="dead";
 		nodes[7].role="power";
-	}, desc:"贾南风不甘心大权旁落，以惠帝名义，下密诏令楚王司马玮杀了汝南王司马亮和卫瓘"},
+	}, desc:"贾南风以惠帝名义，下密诏令司马玮杀了王司马亮和卫瓘，司马玮掌权"},
 	{name:"第三轮", stage: "third", fn: function(){
 		nodes[7].role="dead";
 		nodes[6].role="power";
-	}, desc:"司马玮杀了司马亮和卫瓘之后，贾南风又以司马玮擅杀大臣之罪杀了司马玮，贾南风掌权"},
+	}, desc:"贾南风又以司马玮擅杀大臣之罪杀了司马玮，贾南风掌权"},
 	{name:"第四轮", stage: "fourth", fn: function(){
 		nodes[5].role="dead";
 		nodes[6].role="dead";
 		nodes[16].role="power king";
 		nodes[4].role="background";
-	}, desc:"299年，贾南风设计陷害杀了太子，却中了赵王司马伦的计，被司马伦以杀害太子的罪名处死，司马伦掌权"},
+	}, desc:"299年，贾南风设计陷害并杀了太子，却中了司马伦的计，被司马伦以杀害太子的罪名处死，司马伦掌权，301年，司马伦废晋惠帝自立为帝"},
 	{name:"第五轮", stage: "fifth", fn: function(){
 		nodes[16].role="dead";
 		nodes[14].role="power";
 		nodes[4].role="king";
-	}, desc:"301年，司马伦废晋惠帝自立为帝，司马冏联合王司马颙和王司马颖起兵讨伐，司马伦兵败被杀，司马冏迎接司马衷复位，自己主持朝政"},
+	}, desc:"司马冏联合司马颙和司马颖杀了司马伦，惠帝复位，司马冏掌权"},
 	{name:"第六轮", stage: "sixth", fn: function(){
 		nodes[14].role="dead";
 		nodes[8].role="power";
-	}, desc:"302年，司马颙联合司马乂起兵讨伐司马冏，司马冏被司马乂所杀，司马乂掌权"},
+	}, desc:"302年，司马颙联合司马乂杀了司马冏，司马乂掌权"},
 	{name:"第七轮", stage: "seventh", fn: function(){
 		nodes[8].role="dead";
 		nodes[9].role="power";
-	}, desc:"303年，司马颙联合司马颖起兵讨伐司马乂，最后司马乂取胜，结果司马越趁其不备杀了司马乂，而朝政却落入了实力最强的司马颖之手"},
+	}, desc:"303年，司马颙联合司马颖讨伐司马乂，却被司马乂打败，结果司马越趁其不备杀了司马乂，实力最强的司马颖掌权"},
 	{name:"第八轮", stage: "eighth", fn: function(){
 		nodes[19].role="power";
-	}, desc:"305年，司马越联合其弟司马腾与胡人势力击败了司马颖，晋惠帝被司马颖挟持逃到洛阳，被司马颙截获，司马颙掌权"},
+	}, desc:"305年，司马越联合胡人势力击败了司马颖，晋惠帝被司马颖挟持逃到洛阳，被司马颙截获，司马颙掌权"},
 	{name:"第九轮", stage: "ninth", fn: function(){
 		nodes[4].role="dead";
 		nodes[9].role="dead";
 		nodes[19].role="dead";
 		nodes[22].role="power";
 		nodes[10].role="king";
-	}, desc:"306年，司马越联合鲜卑势力打败司马颙，随后杀了司马颖，一年后(307年)晋惠帝暴病身亡(疑为司马越毒害)，司马炽被立为晋怀帝，司马越设计伏袭杀了司马颙，至此历经十六年(291-307)的八王之乱结束，大中华即将进入五胡乱华的时代"}
+	}, desc:"306年，司马越联合鲜卑势力打败司马颙，随后杀了司马颖，一年后(307年)晋惠帝暴病身亡(疑为司马越毒害)，司马炽被立为晋怀帝，司马越又设计袭杀了司马颙，至此历经十六年(291-307)的八王之乱结束，大中华即将进入五胡乱华的时代"}
 ];
 
 var stage = d3.select("body")
