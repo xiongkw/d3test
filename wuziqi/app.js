@@ -78,6 +78,9 @@ function checkWin(d){
 			.attr("x2", line.tx * space).attr("y2", line.ty * space);
 			
 		svg.selectAll(".position").data(nodes).on("click", null);
+		if("Winner is "+d.status+", 重新开始？"){
+			window.location.reload();
+		}
 	}
 }
 
