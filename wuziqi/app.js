@@ -8,9 +8,11 @@ var space = 40;
 
 var g = svg.append("g");
 for(var i=0; i<=20; i++){
-	g.append("line").attr("class", "line").attr("x1", i*space).attr("y1", 0).attr("x2", i*space).attr("y2", height);
+	g.append("line").attr("class", "line")
+		.attr("x1", i*space).attr("y1", 0).attr("x2", i*space).attr("y2", height);
 	
-	g.append("line").attr("class", "line").attr("x1", 0).attr("y1", i*space).attr("x2", width).attr("y2", i*space);
+	g.append("line").attr("class", "line")
+		.attr("x1", 0).attr("y1", i*space).attr("x2", width).attr("y2", i*space);
 }
 
 var coords = [];
@@ -51,7 +53,8 @@ function checkWin(d){
 	var line = checkHorizontal(d) || checkVertical(d) || checkLHT(d) || checkRHT(d);
 	if(line){
 		svg.append("line").attr("class", "win")
-			.attr("x1", line.fx).attr("y1", line.fy).attr("x2", line.tx).attr("y2", line.ty);
+			.attr("x1", line.fx * space).attr("y1", line.fy * space)
+			.attr("x2", line.tx * space).attr("y2", line.ty * space);
 		svg.selectAll(".position").data(nodes).on("click", null);
 	}
 }
