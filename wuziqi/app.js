@@ -131,7 +131,7 @@ function checkLHT(d){
 		}
 	}
 	var rx = d.x+1, ry = d.y+1;
-	for(; rx<d.x+5 && rx<20 && ry<20; lx++,ly++){
+	for(; rx<d.x+5 && rx<20 && ry<20; rx++,ry++){
 		if(coords[rx][ry].status != d.status){
 			break;
 		}
