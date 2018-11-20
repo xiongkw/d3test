@@ -37,6 +37,7 @@ circle{
 }
 
 .win{
+	stroke-width: 10px;
 	stroke: #00FF00;
 	stroke-linecap: round;
 }
