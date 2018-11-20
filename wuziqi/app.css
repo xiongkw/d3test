@@ -21,12 +21,12 @@ circle{
 }
 
 .white{
-	fill: #FFF;
+	fill:url(#circle-white);
 	fill-opacity: 1;
 }
 
 .black {
-	fill: #000;
+	fill:url(#circle-black);
 	fill-opacity: 1;
 }
 
@@ -37,6 +37,6 @@ circle{
 }
 
 .win{
-	stroke-width: 2px;
-	stroke: green;
+	stroke: #00FF00;
+	stroke-linecap: round;
 }

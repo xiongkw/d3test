@@ -3,6 +3,27 @@ var svg = d3.select("body")
 	.append("svg")
     .attr("width", width)
     .attr("height", height);
+	
+var defs = svg.append("defs");
+defs.append("linearGradient")
+	.attr("id", "circle-white")
+	.attr("x1", "0%").attr("y1", "0%")
+	.attr("x2", "0%").attr("y2", "100%")
+	.selectAll("stop")
+	.data([{offset:"0%",color:"#FFF"},{offset:"75%",color:"#F0F8FF"}])
+	.enter().append("stop")
+	.attr("offset", function(d){return d.offset;})
+	.attr("style", function(d){return "stop-opacity:1;stop-color:"+d.color;});
+
+defs.append("linearGradient")
+	.attr("id", "circle-black")
+	.attr("x1", "0%").attr("y1", "0%")
+	.attr("x2", "0%").attr("y2", "100%")
+	.selectAll("stop")
+	.data([{offset:"0%",color:"#DCDCDC"},{offset:"75%",color:"#000"}])
+	.enter().append("stop")
+	.attr("offset", function(d){return d.offset;})
+	.attr("style", function(d){return "stop-opacity:1;stop-color:"+d.color;});
 
 var space = 40;
 
@@ -55,6 +76,7 @@ function checkWin(d){
 		svg.append("line").attr("class", "win")
 			.attr("x1", line.fx * space).attr("y1", line.fy * space)
 			.attr("x2", line.tx * space).attr("y2", line.ty * space);
+			
 		svg.selectAll(".position").data(nodes).on("click", null);
 	}
 }
@@ -97,7 +119,7 @@ function checkVertical(d){
 
 function checkLHT(d){
 	var lx = d.x-1, ly = d.y-1;
-	for(; lx<d.x-5 && lx>0 && ly>0; lx--,ly--){
+	for(; lx>d.x-5 && lx>0 && ly>0; lx--,ly--){
 		if(coords[lx][ly].status != d.status){
 			break;
 		}
@@ -115,18 +137,18 @@ function checkLHT(d){
 
 function checkRHT(d){
 	var lx = d.x-1, ly = d.y+1;
-	for(; lx<d.x-5 && lx>0 && ly<20; lx--,ly++){
+	for(; lx>d.x-5 && lx>0 && ly<20; lx--,ly++){
 		if(coords[lx][ly].status != d.status){
 			break;
 		}
 	}
 	var rx = d.x+1, ry = d.y-1;
-	for(; rx<d.x+5 && rx<20 && ry>0; lx++,ly--){
+	for(; rx<d.x+5 && rx<20 && ry>0; rx++,ry--){
 		if(coords[rx][ry].status != d.status){
 			break;
 		}
 	}
 	if(rx-lx>5){
-		return {fx:lx+1,fy:ly+1,tx:rx-1,ty:ry-1};
+		return {fx:lx+1,fy:ly-1,tx:rx-1,ty:ry+1};
 	}
 }
