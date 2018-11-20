@@ -1,0 +1,42 @@
+body {
+	margin: 0;
+	padding: 0;
+}
+
+svg{
+	background-color: #C0C0C0;
+}
+circle{
+	stroke-width: 1px;
+}
+
+.position{
+	fill: #FFF;
+	stroke: none;
+	fill-opacity: 0;
+}
+
+.position:hover{
+	stroke: yellow;
+}
+
+.white{
+	fill: #FFF;
+	fill-opacity: 1;
+}
+
+.black {
+	fill: #000;
+	fill-opacity: 1;
+}
+
+.line{
+	stroke-width: 1px;
+	stroke: #000;
+	pointer-events: none;
+}
+
+.win{
+	stroke-width: 2px;
+	stroke: green;
+}
